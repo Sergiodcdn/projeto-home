@@ -4,22 +4,22 @@
     --cor2: #BF8450;
     --cor3: #BF5D24;
     --cor4: #40241A;
+    --cor5: #037171;
+    --cor6: #03312E;
+    --cor7: #009F93;
+    --cor8: #6B4B3E;
+    --cor9: #DFE8EE;
+
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-menu: Montserrat;
     --fonte-destaque: 'Android', cursive;
 }
 
-body {   
-    background-color: var(--cor0);
-    font-family: var(--fonte-padrao);
-    z-index: -1;
-    opacity: 0.7;
-    background-image: url('../imagens/trigo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body::after {
@@ -29,8 +29,9 @@ body::after {
     left: 0;
     right: 0;
     bottom: 0;
-    
-    
+    opacity: 0.23;
+    z-index: -1;
+    background: url(/imagens/bg-papel.jpg);    
 }
 
 a {
@@ -38,9 +39,69 @@ a {
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
     display: inline-block;
+    color: var(--cor5);
+}
+
+.logotipo {
+    font-size: 2rem;
+    color: var(--cor5);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    color: var(--cor6);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h6 {
+    color: var(--cor5);
+    font-size: .85rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
 }
 
 p {
-    color: white;
-    font-family: var(--fonte-destaque);
+    font-size: 1rem;
+    line-height: 2rem;
+    color: var(--cor7);
+    word-spacing: .15rem;
+}
+
+.btn-contorno {
+    border: solid 1px #ddd;
+    border-radius: 1.5rem;
+    color: var(--cor6);
+    font-size: .8rem;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    display: flex;
+    align-self: center;
+    padding: .75rem 1.5rem;
+    transition: border-color 500ms;
+}
+
+.btn-contorno:hover {
+    border-color: var(--cor4);
+    transition: 500ms;
+}
+
+.btn-solido {
+    border: none;
+    border-radius: 1.8rem;
+    color: var(--cor6);
+    font-size: .8rem;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    display: flex;
+    align-self: center;
+    padding: .75rem 1.5rem;
+    transition: border-color 500ms;
+}
+
+.btn-contorno:hover {
+    border-color: var(--cor4);
+    transition: 500ms;
 }
