@@ -20,6 +20,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 body::after {
@@ -29,9 +30,9 @@ body::after {
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.23;
+    opacity: 0.15;
     z-index: -1;
-    background: url(/imagens/bg-papel.jpg);    
+    background: url(/imagens/bg-papel.jpg);
 }
 
 a {
@@ -47,13 +48,35 @@ a {
     color: var(--cor5);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: normal;
     color: var(--cor6);
 }
 
 h1 {
     font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+    color: var(--cor8);
+}
+
+h3 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.4rem;
+    color: var(--cor5);
+}
+
+h5 {
+    color: var(--cor8);
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
 }
 
 h6 {
@@ -95,13 +118,31 @@ p {
     font-size: .8rem;
     letter-spacing: .15rem;
     text-transform: uppercase;
-    display: flex;
-    align-self: center;
-    padding: .75rem 1.5rem;
-    transition: border-color 500ms;
+    padding: 1.2rem 1.5rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 500ms;
 }
 
-.btn-contorno:hover {
-    border-color: var(--cor4);
+.btn-solido:hover {
+    background-color: var(--cor4);
+    color: var(--cor9);
     transition: 500ms;
 }
+
+.div-sobre-foto img {
+    width: 90%;
+    border-radius: 50%;
+    background-color: rgba(245, 245, 245, 0.706);
+    display: inline-block;
+}
+
+.item-sobre i {
+    font-size: 2rem;
+    background-color: var(--cor4);
+    color: var(--cor9);
+    padding: .5rem .8rem;
+    display: inline-block;
+    border-radius: 1rem;
+}
+
