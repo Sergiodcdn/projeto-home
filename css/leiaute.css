@@ -102,3 +102,29 @@ header {
     grid-template-rows: auto auto;
     grid-gap: 1.5rem;
 }
+
+.sec-projetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 1.5rem;
+    grid-template-areas:
+        "titulo titulo"
+        "projeto1 projeto2";
+}
+
+.sec-projetos h2 {
+    grid-area: titulo;
+}
+
+.sec-projetos > div:nth-child(2) {
+    grid-area: projeto1;
+}
+
+.sec-projetos > div:nth-child(3) {
+    grid-area: projeto2;
+}
+
+div.item-projeto > img {
+    width: 100%;
+}
